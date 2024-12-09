@@ -1,5 +1,13 @@
 import { test, expect } from '@playwright/test';
 
+test('has title', async ({ page }) => {
+  await page.goto('https://sid.treinamento.ro.gov.br/');
+
+  // Expect a title "to contain" a substring.
+  await expect(page).toHaveTitle(/SID/);
+});
+
+
 test('acessando o sid', async ({ page }) => {
   await page.goto('https://sid.treinamento.ro.gov.br/');
   
@@ -18,6 +26,8 @@ test('acessando o sid', async ({ page }) => {
   await page.locator('xpath=/html/body/div/main/div[3]/div[1]/label/label').click();
 
   await page.locator('xpath=/html/body/div/main/div[3]/div[2]/button').click(); //rh
+
+  await expect(page.getByRole('heading', { name: 'RH' })).toBeVisible();
 
   await page.locator('xpath=/html/body/div[1]/div[3]/div[1]/div[4]/div[1]/ul/li[3]/a').click(); // férias dps servidores
 
