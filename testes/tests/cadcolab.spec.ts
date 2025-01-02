@@ -11,6 +11,8 @@ test('colaborador', async () => {
 
     await page.goto('https://atualizacao-cadastral.development.local/');
 
+    await page.waitForLoadState('load');
+
     await page.locator('xpath=/html/body/div[1]/div/div/div[3]/form/div[1]/div/input').fill("08636103665");
   
     await page.locator('xpath=//*[@id="Password"]').click();
@@ -46,6 +48,7 @@ test('colaborador', async () => {
         await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[10]/a/span').click(); //PV
 
         await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[11]/a/span').click(); //Documentos
+        
 
     await page.locator('xpath=//html/body/aside/div[2]/ul/li[5]/a').click(); //homologar
 
