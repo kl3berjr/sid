@@ -27,25 +27,25 @@ test('colaborador', async () => {
 
         await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[1]/a/span').click(); //DP
 
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[2]/a/span').click(); // EC
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[2]/a/span').click(); //EC
 
-        await page.locator('xpaht=//html/body/main/div/div[1]/div/div/div/div/ul/li[3]/a/span').click(); // Dependentes
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[3]/a/span').click(); //Dependentes
         
-        await page.locator('xpaht=//html/body/main/div/div[1]/div/div/div/div/ul/li[4]/a/span').click(); //Contatos
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[4]/a/span').click(); //Contatos
 
-        await page.locator('xpaht=//html/body/main/div/div[1]/div/div/div/div/ul/li[5]/a/span').click(); //Endereço
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[5]/a/span').click(); //Endereço
 
-        await page.locator('xpaht=//html/body/main/div/div[1]/div/div/div/div/ul/li[6]/a/span').click(); //Escolaridade
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[6]/a/span').click(); //Escolaridade
 
-        await page.locator('xpaht=//html/body/main/div/div[1]/div/div/div/div/ul/li[7]/a/span').click(); //Cursos
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[7]/a/span').click(); //Cursos
 
-        await page.locator('xpaht=//html/body/main/div/div[1]/div/div/div/div/ul/li[8]/a/span').click(); //Registros
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[8]/a/span').click(); //Registros
 
-        await page.locator('xpaht=//html/body/main/div/div[1]/div/div/div/div/ul/li[9]/a/span').click(); //declarações
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[9]/a/span').click(); //declarações
 
-        await page.locator('xpaht=//html/body/main/div/div[1]/div/div/div/div/ul/li[10]/a/span').click(); //PV
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[10]/a/span').click(); //PV
 
-        await page.locator('xpaht=//html/body/main/div/div[1]/div/div/div/div/ul/li[11]/a/span').click(); //Documentos
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[11]/a/span').click(); //Documentos
 
     await page.locator('xpath=//html/body/aside/div[2]/ul/li[5]/a').click(); //homologar
 
