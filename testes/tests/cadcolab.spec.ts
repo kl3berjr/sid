@@ -1,4 +1,4 @@
-import { test, chromium, Browser, BrowserContext, Page } from '@playwright/test';
+import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
 
 test('colaborador', async () => {
     const browser: Browser = await chromium.launch();
@@ -15,19 +15,23 @@ test('colaborador', async () => {
   
     await page.locator('xpath=//*[@id="Password"]').click();
   
-    await page.locator('xpath=//*[@id="Password"]').fill("@setic2023");
+    await page.locator('xpath=//*[@id="Password"]').fill("@Setic2025");
 
     await page.locator('xpath=//*[@id="validation-login"]/button').click();
 
     await page.locator('xpath=//html/body/aside/div[2]/ul/li[2]/a').click(); //home
 
+    await expect(page.getByRole('heading', { name: 'Status da Atualização Cadastral' })).toBeVisible();
+
     await page.locator('xpath=//html/body/aside/div[2]/ul/li[3]/a').click(); //atualizar
 
         await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[1]/a/span').click();
 
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[2]').click();
+        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[2]/a/span').click();
 
     await page.locator('xpath=//html/body/aside/div[2]/ul/li[5]/a').click(); //homologar
 
     await page.locator('xpath=//html/body/main/nav/div/div/ul/li[2]/a/i').click(); // icone
+
+    //await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[1]/a/span').screenshot({ path: 'screenshot.png' });
 });
