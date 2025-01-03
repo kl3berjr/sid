@@ -27,27 +27,25 @@ test('colaborador', async () => {
 
     await page.locator('xpath=//html/body/aside/div[2]/ul/li[3]/a').click(); //atualizar
 
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[1]/a/span').click(); //DP
+    const Links = [
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[1]/a/span', label: 'DP' },
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[2]/a/span', label: 'EC' },
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[3]/a/span', label: 'Dependentes' },
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[4]/a/span', label: 'Contatos' },
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[5]/a/span', label: 'Endereço' },
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[6]/a/span', label: 'Escolaridade' },
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[7]/a/span', label: 'Cursos' },
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[8]/a/span', label: 'Registros' },
+        { xpath: '//html/body/main/div/div[2]/div/div/div/div/ul/li[2]/a/span', label: 'Registros de deficiente' },
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[9]/a/span', label: 'Declarações' },
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[10]/a/span', label: 'PV' },
+        { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[11]/a/span', label: 'Documentos' }
+    ];
 
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[2]/a/span').click(); //EC
-
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[3]/a/span').click(); //Dependentes
-        
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[4]/a/span').click(); //Contatos
-
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[5]/a/span').click(); //Endereço
-
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[6]/a/span').click(); //Escolaridade
-
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[7]/a/span').click(); //Cursos
-
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[8]/a/span').click(); //Registros
-
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[9]/a/span').click(); //declarações
-
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[10]/a/span').click(); //PV
-
-        await page.locator('xpath=//html/body/main/div/div[1]/div/div/div/div/ul/li[11]/a/span').click(); //Documentos
+    for (const link of Links) {
+        console.log(`Clicando no link de ${link.label}`);
+        await page.locator(`xpath=${link.xpath}`).click();
+    }
         
 
     await page.locator('xpath=//html/body/aside/div[2]/ul/li[5]/a').click(); //homologar
