@@ -26,10 +26,21 @@ test('colaborador', async () => {
     await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
 
         await page.locator('xpath=//html/body/div[2]/div[2]/div/div[2]/div[1]/a').click();
+        await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
         await page.locator('xpath=//html/body/div[2]/div[2]/div/div[2]/div[2]/a').click();
+        await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
         await page.locator('xpath=//html/body/div[2]/div[2]/div/div[2]/div[3]/a').click();
+        await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
         await page.locator('xpath=//html/body/div[2]/div[2]/div/div[2]/div[4]/a').click();
-        
+        await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
+        await page.locator('xpath=//html/body/div[2]/div[2]/div/div[2]/div[5]/a').click();
+        await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
+        await page.locator('xpath=//html/body/div[2]/div[2]/div/div[2]/div[6]/a').click();
+        await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
+        await page.locator('xpath=//html/body/div[2]/div[2]/div/div[2]/div[7]/a').click();
+        await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
+        await page.locator('xpath=//html/body/div[2]/div[2]/div/div[2]/div[8]/a').click();
+        await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
 
     await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[4]/a').click();
 
