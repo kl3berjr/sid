@@ -24,6 +24,7 @@ test('colaborador', async () => {
     await page.locator('xpath=//*[@id="validation-login"]/button').click();
 
     await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
+    await page.waitForLoadState('load');
 
         await page.locator('xpath=//html/body/div[2]/div[2]/div/div[2]/div[1]/a').click();
         await page.locator('xpath=//html/body/div[2]/aside/div/div[1]/nav/ul/li[3]/a').click(); // Minhas Informações
