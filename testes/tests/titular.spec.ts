@@ -11,7 +11,7 @@ test('perfil titular da pasta', async ({ page }) => {
   
     await page.locator('xpath=//*[@id="Password"]').click();
   
-    await page.locator('xpath=//*[@id="Password"]').fill("@setic2023");
+    await page.locator('xpath=//*[@id="Password"]').fill("@Setic2025");
   
     await page.locator('xpath=//*[@id="validation-login"]/button').click();
     

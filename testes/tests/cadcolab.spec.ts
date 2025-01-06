@@ -39,6 +39,7 @@ test('colaborador', async () => {
         { xpath: '//html/body/main/div/div[2]/div/div/div/div/ul/li[2]/a/span', label: 'Registros de deficiente' },
         { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[9]/a/span', label: 'Declarações' },
         { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[10]/a/span', label: 'PV' },
+        { xpath: '//html/body/main/div/div[2]/div[2]/div/div[2]/div[3]/button/span[2]', label: 'Prova de vida'},
         { xpath: '//html/body/main/div/div[1]/div/div/div/div/ul/li[11]/a/span', label: 'Documentos' }
     ];
 
