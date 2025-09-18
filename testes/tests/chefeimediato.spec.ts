@@ -7,11 +7,11 @@ test('perfil chefe imediato', async ({ page }) => {
   
     await page.locator('xpath=//*[@id="validation-login"]/div[1]/div').click();
   
-    await page.locator('xpath=/html/body/div[1]/div/div/div[3]/form/div[1]/div/input').fill("08636103665");
+    await page.locator('xpath=/html/body/div[1]/div/div/div[3]/form/div[1]/div/input').fill("0000");
   
     await page.locator('xpath=//*[@id="Password"]').click();
   
-    await page.locator('xpath=//*[@id="Password"]').fill("@Setic2025");
+    await page.locator('xpath=//*[@id="Password"]').fill("00000");
 
     await page.locator('xpath=//*[@id="validation-login"]/button').click();
     
