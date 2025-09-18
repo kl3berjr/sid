@@ -15,11 +15,11 @@ test('colaborador', async () => {
 
     await page.locator('xpath=//html/body/div/div/main/div[3]/a').click();
 
-    await page.locator('xpath=/html/body/div[1]/div/div/div[3]/form/div[1]/div/input').fill("08636103665");
+    await page.locator('xpath=/html/body/div[1]/div/div/div[3]/form/div[1]/div/input').fill("00000");
   
     await page.locator('xpath=//*[@id="Password"]').click();
   
-    await page.locator('xpath=//*[@id="Password"]').fill("@Setic2025");
+    await page.locator('xpath=//*[@id="Password"]').fill("000000");
 
     await page.locator('xpath=//*[@id="validation-login"]/button').click();
 
